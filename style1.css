@@ -5,22 +5,61 @@ body {
 }
 
 .header {
-    background-color: #f0f0f0;
+    background-color: #f1f1f1;
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid #ccc;
 }
 
 .toolbar {
-    background-color: #e0e0e0;
+    background-color: #e7e7e7;
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid #ccc;
 }
 
-.toolbar button {
+.toolbar .icon-button {
     margin: 0 5px;
     padding: 5px 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.toolbar .icon-button.save {
+    background-image: url('icons/save.png');
+}
+
+.toolbar .icon-button.cancel {
+    background-image: url('icons/cancel.png');
+}
+
+.toolbar .icon-button.edit {
+    background-image: url('icons/edit.png');
+}
+
+.toolbar .icon-button.save-draft {
+    background-image: url('icons/save-draft.png');
+}
+
+.toolbar .icon-button.load-draft {
+    background-image: url('icons/load-draft.png');
+}
+
+.toolbar .icon-button.undo {
+    background-image: url('icons/undo.png');
+}
+
+.toolbar .icon-button.redo {
+    background-image: url('icons/redo.png');
+}
+
+.toolbar .icon-button.check {
+    background-image: url('icons/check.png');
+}
+
+.toolbar .icon-button.additional-functions {
+    background-image: url('icons/additional-functions.png');
 }
 
 .container {
@@ -35,7 +74,35 @@ body {
 }
 
 .navigation h2 {
+    font-size: 1.2em;
     margin-top: 0;
+}
+
+.navigation .icon-button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navigation .icon-button.new {
+    background-image: url('icons/new.png');
+}
+
+.navigation .icon-button.up {
+    background-image: url('icons/up.png');
+}
+
+.navigation .icon-button.down {
+    background-image: url('icons/down.png');
+}
+
+.navigation .icon-button.delete {
+    background-image: url('icons/delete.png');
 }
 
 .navigation ul {
@@ -53,7 +120,17 @@ body {
 }
 
 .content h2 {
+    font-size: 1.2em;
     margin-top: 0;
+}
+
+.tabs {
+    margin-bottom: 10px;
+}
+
+.tabs button {
+    margin-right: 5px;
+    padding: 5px 10px;
 }
 
 table {
@@ -72,17 +149,23 @@ th, td {
 }
 
 form {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    width: 50%;
+    padding: 5px;
 }
 
 form label {
-    text-align: right;
-    padding-right: 10px;
+    display: block;
+    margin-bottom: 5px;
 }
 
 form input, form select {
     width: 100%;
     padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
