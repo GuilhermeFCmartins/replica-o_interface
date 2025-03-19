@@ -26,42 +26,6 @@ body {
     cursor: pointer;
 }
 
-.toolbar .icon-button.save {
-    background-image: url('icons/save.png');
-}
-
-.toolbar .icon-button.cancel {
-    background-image: url('icons/cancel.png');
-}
-
-.toolbar .icon-button.edit {
-    background-image: url('icons/edit.png');
-}
-
-.toolbar .icon-button.save-draft {
-    background-image: url('icons/save-draft.png');
-}
-
-.toolbar .icon-button.load-draft {
-    background-image: url('icons/load-draft.png');
-}
-
-.toolbar .icon-button.undo {
-    background-image: url('icons/undo.png');
-}
-
-.toolbar .icon-button.redo {
-    background-image: url('icons/redo.png');
-}
-
-.toolbar .icon-button.check {
-    background-image: url('icons/check.png');
-}
-
-.toolbar .icon-button.additional-functions {
-    background-image: url('icons/additional-functions.png');
-}
-
 .container {
     display: flex;
 }
@@ -87,22 +51,6 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-}
-
-.navigation .icon-button.new {
-    background-image: url('icons/new.png');
-}
-
-.navigation .icon-button.up {
-    background-image: url('icons/up.png');
-}
-
-.navigation .icon-button.down {
-    background-image: url('icons/down.png');
-}
-
-.navigation .icon-button.delete {
-    background-image: url('icons/delete.png');
 }
 
 .navigation ul {
